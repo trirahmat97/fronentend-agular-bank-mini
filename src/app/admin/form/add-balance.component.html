@@ -1,0 +1,27 @@
+<div class="login-content">
+        <div class="nk-block toggled" id="l-register">
+            <div class="nk-form">
+                <form [formGroup]="accountFormGroup">
+
+                <div class="input-group">
+                    <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-support"></i></span>
+                    <div class="nk-int-st">
+                        <input type="number" class="form-control" formControlName="norek"placeholder="Account Destination" >
+                    </div>
+                </div>
+
+                <div class="input-group mg-t-15">
+                    <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-dollar"></i></span>
+                    <div class="nk-int-st">
+						<input type="number" class="form-control" formControlName="amount" placeholder="Amount" required="required"/>
+                    </div>
+				</div>
+				
+                <button type="submit" class="btn btn-login btn-success btn-float" (click)="submit()" [disabled]="accountFormGroup.invalid"><i class="notika-icon notika-right-arrow"></i></button>
+            </form> 
+            </div>
+
+            <div class="nk-navigation rg-ic-stl">
+            </div>
+        </div>
+    </div>

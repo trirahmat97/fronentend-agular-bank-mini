@@ -1,0 +1,82 @@
+<div class="breadcomb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="breadcomb-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="breadcomb-wp">
+									<div class="breadcomb-icon">
+										<i class="notika-icon notika-windows"></i>
+									</div>
+									<div class="breadcomb-ctn">
+										<h2>Data Customers</h2>
+										<p>Welcome to Bang Bank <span class="bread-ntd">BeSquad</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+								<div class="breadcomb-report">
+									<button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <div class="normal-table-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="normal-table-list mg-t-30">
+                      <div class="basic-tb-hd">
+                      </div>
+                      <div class="bsc-tbl-st">
+                            <button class="btn btn-success notika-btn-success" routerLink="/addcustomer"><i class="fa fa-user"></i> New User</button>
+                          <table class="table table-striped">
+                              <thead>
+                                  <tr>
+                                      <th>ID</th>
+                                      <th>NIP</th>
+                                      <th>FIRST NAME</th>
+                                      <th>LAST NAME</th>
+                                      <th>GENDER</th>
+                                      <th>ADRESS</th>
+                                      <th>PHONE</th>
+                                      <th>EMAIL</th>
+                                      <th>STATUS</th>
+                                      <th>ACTION</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor="let customer of listCustomer | paginate: {itemsPerPage: 5, currentPage: p};">
+                                      <td>{{customer.idcustomer}}</td>
+                                      <td>{{customer.nip}}</td>
+                                      <td>{{customer.firstname}}</td>
+                                      <td>{{customer.lastname}}</td>
+                                      <td>{{customer.gender}}</td>
+                                      <td>{{customer.address}}</td>
+                                      <td>{{customer.phonenumber}}</td>
+                                      <td>{{customer.email}}</td>
+                                      <td>
+                                          <button (click)="changeStatus(customer)" *ngIf="customer.status == 1" class="btn btn-success success-icon-notika waves-effect"><i class="notika-icon notika-checked"></i> Active</button>
+                                          <button (click)="changeStatus(customer)" *ngIf="customer.status == 2" class="btn btn-danger danger-icon-notika waves-effect"><i class="notika-icon notika-close"></i> Dorman</button>
+                                      </td>
+                                        <td>
+                                            <button (click)="viewAccount(customer)" class="btn btn-success success-icon-notika waves-effect"><i class="notika-icon notika-support"></i></button>
+                                        </td>
+                                    </tr>
+        
+                              </tbody>
+
+                          </table>
+                          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>

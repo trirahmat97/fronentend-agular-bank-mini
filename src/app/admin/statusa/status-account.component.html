@@ -1,0 +1,28 @@
+<div class="login-content">
+    <div class="nk-block toggled" id="l-register">
+        <div class="nk-form">
+            <form [formGroup]="angForm">
+
+            <div class="input-group">
+                <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-credit-card"></i></span>
+                <div class="nk-int-st">
+                    <input type="text" class="form-control" formControlName="norek" placeholder="norek" >
+                </div>
+            </div>
+
+            <div class="input-group mg-t-15">
+                <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-edit"></i></span>
+                <div class="nk-int-st">
+                    <input type="number" max="2" maxlaength="1" class="form-control" formControlName="status" placeholder="status" required="required"/>
+                </div>
+            </div>
+
+            <input type="hidden" class="form-control" formControlName="id" placeholder="id" required="required"/>
+            <button type="submit" class="btn btn-login btn-success btn-float" (click)="submit()" [disabled]="angForm.invalid"><i class="notika-icon notika-right-arrow"></i></button>
+        </form> 
+        </div>
+
+        <div class="nk-navigation rg-ic-stl">
+        </div>
+    </div>
+</div>

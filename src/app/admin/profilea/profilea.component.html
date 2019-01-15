@@ -1,0 +1,120 @@
+<div class="login-content">
+    <!-- Register -->
+    <div class="nk-block toggled" id="l-register">
+        <div class="nk-form">
+            <form action="" method="post" [formGroup]="angForm">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group ic-cmp-int">
+                            <div class="form-ic-cmp">
+                                <i class="notika-icon notika-credit-card"></i>
+                            </div>
+                            <div class="nk-int-st">
+                                <input type="number" class="form-control" formControlName="nip" placeholder="nip">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group ic-cmp-int">
+                            <div class="form-ic-cmp">
+                                <i class="notika-icon notika-support"></i>
+                            </div>
+                            <div class="nk-int-st">
+                                <input type="text" class="form-control" formControlName="firstname" placeholder="firstname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group ic-cmp-int">
+                            <div class="form-ic-cmp">
+                                <i class="notika-icon notika-support"></i>
+                            </div>
+                            <div class="nk-int-st">
+                                <input type="text" class="form-control" formControlName="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group ic-cmp-int">
+                            <div class="form-ic-cmp">
+                                <i class="notika-icon notika-support"></i>
+                            </div>
+                            <div class="nk-int-st">
+                                <input type="text" class="form-control" formControlName="gender" placeholder="Gender">
+                            
+                                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="nk-int-mk sl-dp-mn sm-res-mg-t-10">
+                                        <h2>Disabled Options</h2>
+                                    </div>
+                                    <div class="bootstrap-select fm-cmp-mg">
+                                        <div class="btn-group bootstrap-select dropup"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" title="Cariska" aria-expanded="false"><span class="filter-option pull-left">Cariska</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox" style="max-height: 1677px; overflow: hidden; min-height: 132px;"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false" style="max-height: 1667px; overflow-y: auto; min-height: 122px;"><li data-original-index="0" class="disabled"><a tabindex="-1" class="" style="" data-tokens="null" role="option" href="#" aria-disabled="true" aria-selected="false"><span class="text">Drama</span><span class="notika-icon notika-checked check-mark"></span></a></li><li data-original-index="1" class="selected"><a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="text">Cariska</span><span class="notika-icon notika-checked check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Kamines</span><span class="notika-icon notika-checked check-mark"></span></a></li><li data-original-index="3" class="disabled"><a tabindex="-1" class="" style="" data-tokens="null" role="option" href="#" aria-disabled="true" aria-selected="false"><span class="text">Malias</span><span class="notika-icon notika-checked check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Cheriska</span><span class="notika-icon notika-checked check-mark"></span></a></li></ul></div><select class="selectpicker" tabindex="-98">
+                          <option disabled="disabled">Drama</option>
+                          <option>Cariska</option>
+                          <option>Kamines</option>
+                          <option disabled="disabled">Malias</option>
+                          <option>Cheriska</option>
+                        </select></div>
+                                    </div>
+                                </div> -->
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group ic-cmp-int">
+                            <div class="form-ic-cmp">
+                                <i class="notika-icon notika-phone"></i>
+                            </div>
+                            <div class="nk-int-st">
+                                <input type="text" class="form-control" formControlName="phonenumber" placeholder="Phone Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group ic-cmp-int">
+                            <div class="form-ic-cmp">
+                                <i class="notika-icon notika-mail"></i>
+                            </div>
+                            <div class="nk-int-st">
+                                <input type="text" class="form-control" formControlName="email" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group ic-cmp-int">
+                            <div class="form-ic-cmp">
+                                <i class="notika-icon notika-edit"></i>
+                            </div>
+                            <div class="nk-int-st">
+                                <input type="text" class="form-control" formControlName="username" placeholder="Username">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group ic-cmp-int">
+                            <div class="form-ic-cmp">
+                                <i class="notika-icon notika-map"></i>
+                            </div>
+                            <div class="nk-int-st">
+                                <textarea type="text" class="form-control" formControlName="address" placeholder="Address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="idcustomer" formControlName="idcustomer">
+                </div>
+            
+            <button type="submit" (click)="dashboard()" [disabled]="angForm.invalid" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-right-arrow"></i></button>
+            </form>
+        </div>
+
+        <div class="nk-navigation rg-ic-stl">
+            <!-- <a data-ma-block="#l-login"><i class="notika-icon notika-right-arrow"></i> <span>Dashboard</span></a> -->
+        </div>
+    </div>
+</div>
+<!-- Login Register area End-->

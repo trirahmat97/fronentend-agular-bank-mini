@@ -1,0 +1,38 @@
+<div class="login-content">
+        <div class="nk-block toggled" id="l-register">
+            <div class="nk-form">
+                <form [formGroup]="angForm">
+
+                <div class="input-group">
+                    <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-support"></i></span>
+                    <div class="nk-int-st">
+                        <input type="number" class="form-control" maxlength="9" placeholder="Account Destination" formControlName="idcard">
+                    </div>
+                </div>
+
+                <div class="input-group mg-t-15">
+                    <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-dollar"></i></span>
+                    <div class="nk-int-st">
+                        <input type="number" class="form-control" placeholder="Enter Amount" formControlName="amount">
+                    </div>
+                </div>
+
+                <div class="input-group mg-t-15">
+                    <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-edit"></i></span>
+                    <div class="nk-int-st">
+                        <input type="password" maxlength="4" class="form-control" placeholder="PIN" formControlName="pin">
+                    </div>
+                </div>
+
+                <input type="hidden" required class="form-control" formControlName="amounsign" placeholder="amounsign">
+                <input type="hidden" class="form-control" formControlName="accountid" value="2">
+                
+                <button type="submit" class="btn btn-login btn-success btn-float" (click)="addTransfer()" [disabled]="angForm.invalid"><i class="notika-icon notika-right-arrow"></i></button>
+                
+            </form> 
+            </div>
+
+            <div class="nk-navigation rg-ic-stl">
+            </div>
+        </div>
+    </div>

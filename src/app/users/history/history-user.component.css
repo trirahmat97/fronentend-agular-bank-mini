@@ -1,0 +1,19 @@
+/* hide */
+.hide {
+    display: none;
+}
+
+/* mat-table */
+mat-footer-row mat-footer-cell {
+    justify-content: center;
+    font-style: italic;
+}
+
+.input-search {
+    /* // border: 1px solid red; */
+    width: 200px;
+    float: right;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

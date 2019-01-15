@@ -1,0 +1,54 @@
+    <!-- Start Header Top Area -->
+    <div class="header-top-area" *ngIf="checkLogin()">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                            <a href="#"><img src="../../../assets/assets_LogoJenius.png" style="height: 40px" alt="" /></a><b style="margin-left: 10px; font-size:18px; margin-top: 10px; color: white;">Bang Bank</b>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="header-top-menu">
+                        <ul class="nav navbar-nav notika-top-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-search"></i></span></a>
+                                <div role="menu" class="dropdown-menu search-dd animated flipInX">
+                                    <div class="search-input">
+                                        <i class="notika-icon notika-left-arrow"></i>
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item nc-al">
+                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="fa fa-user"></i></span></a>
+                                <div role="menu" class="dropdown-menu message-dd notification-dd animated zoomIn">
+                                    <div class="hd-mg-va">
+                                        <a (click)="logout()">Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-40" *ngIf="checkLogin()">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                        <li><a (click)="dashboard()"><i class="notika-icon notika-house"></i> Dashboard</a>
+                        </li>
+                        <li><a (click)="customera()"><i class="notika-icon notika-support"></i> Customer</a>
+                        </li>
+                        <li><a (click)="accounta()"><i class="notika-icon notika-form"></i> Account</a>
+                        </li>
+                        <li><a (click)="transaksia()"><i class="notika-icon notika-edit"></i> Transaction</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
